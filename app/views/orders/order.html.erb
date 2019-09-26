@@ -5,12 +5,13 @@
         <title> <%= yield(:title) %> | Team Orders App </title>
     </head>
     <body>
-        <a href="http://localhost:3000/orders/home">Home</a> |
-        <a href="http://localhost:3000/orders/order">Order</a> |
-        <a href="http://localhost:3000/orders/confirm">Confirm</a>
+        <p> <%= link_to 'Home', '/orders/home'%> |
+        <%= link_to 'Order', '/orders/order'%> |
+        <%= link_to 'Confirm', '/orders/confirm'%> </p>
+    
         <h1> <%= yield(:title) %> </h1>
         <p>Here is where you place your meal order</p>
         <h1>Order foods</h1>
-        <p><%= link_to 'Order some foods', '/orders/confirm' %></p>
+        <p> <%= link_to 'Order some foods', '/orders/confirm' %></p>
     </body>
 </html>
