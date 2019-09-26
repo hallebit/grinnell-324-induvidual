@@ -10,5 +10,7 @@
         <a href="http://localhost:3000/orders/confirm">Confirm</a>
         <h1> <%= yield(:title) %> </h1>
         <p>Here is where you place your meal order</p>
+        <h1>Order foods</h1>
+        <p><%= link_to 'Order some foods', '/orders/confirm' %></p>
     </body>
 </html>

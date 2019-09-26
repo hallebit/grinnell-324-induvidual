@@ -9,7 +9,9 @@
         <a href="http://localhost:3000/orders/order">Order</a> |
         <a href="http://localhost:3000/orders/confirm">Confirm</a>
         <h1> <%= yield(:title) %> </h1>
-        <p>Your order has been confirmed</p>
+        <h1>Food Ordered</h1>
+        <p>You have ordered <%= @result %> foods</p>
+        <p><%= link_to 'MORE Foods', '/orders/confirm' %></p>
     </body>
 </html>
 
