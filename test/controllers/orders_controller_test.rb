@@ -1,5 +1,7 @@
 require 'test_helper'
 
+# Router Testing Here. 
+
 class OrdersControllerTest < ActionDispatch::IntegrationTest
   test "should get home" do
     get orders_home_url
